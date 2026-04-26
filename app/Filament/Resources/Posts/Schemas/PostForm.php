@@ -85,7 +85,15 @@ class PostForm
                     Section::make("Meta Information")
                     ->icon(Heroicon::InformationCircle)
                     ->schema([
-                        TagsInput::make("tags"),
+                        //TagsInput::make("tags"),
+                        /*Select::make("tags")
+                            ->key('tags_select_input')
+                            ->multiple()
+                            ->relationship("tags","name")
+                            ->preload()
+                            ->searchable(),*/
+                            
+                            
                         Checkbox::make("published"),
                     ]),
                     DatePicker::make("published_at")

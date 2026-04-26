@@ -9,7 +9,7 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    public function up(): void
+    /*     public function up(): void
 {
     Schema::table('posts', function (Blueprint $table) {
         $table->foreignId('category_id')->change()->constrained()->onDelete('cascade');
@@ -21,5 +21,6 @@ public function down(): void
     Schema::table('posts', function (Blueprint $table) {
         $table->dropForeign(['category_id']);
     });
-}
+}*/
 };
+
